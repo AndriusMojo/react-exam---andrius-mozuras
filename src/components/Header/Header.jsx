@@ -1,8 +1,8 @@
 import css from './Header.module.css';
 import Container from '../UI/Container';
 import { useContext } from 'react';
-import AuthContext from '../store/authContext';
 import { NavLink } from 'react-router-dom';
+import AuthContext from '../../store/authContext';
 
 function Header() {
   const authCtx = useContext(AuthContext);
@@ -13,23 +13,20 @@ function Header() {
   }
   
   return (
-    <div>
-        <Container>
-            <img src="/postsIcon.png" alt="" />
-            <nav>
-              <Link to='/login'>Login</Link>
-              <Link to='/register'>Register</Link>
-              <Link to='/home'>Home</Link>
-              <Link to='/add-post'>Add Post</Link>
-              <Link onClick={logoutHandler} to='/login'>Logout</Link>
-            {!authCtx.isUserLoggedIn && <NavLink to={'/login'}>Login</NavLink>}
-            {!authCtx.isUserLoggedIn && <NavLink to={'/register'}>Vip</NavLink> }
-            {authCtx.isUserLoggedIn && <NavLink to={'/home'}>Home</NavLink>}
-            {authCtx.isUserLoggedIn && <NavLink to='/add-post'>Add Post</NavLink>}
-            {authCtx.isUserLoggedIn && <NavLink onClick={logoutHandler} to={'/login'}>Logout</NavLink>  }
+    <header className={css.head}>
+        <Container className={css.header}>
+            <NavLink onClick={logoutHandler} to={'/'}>
+            <img src="/posterous-spaces.png" alt="" />
+            </NavLink>
+            <nav className={css.mainNav}>
+              {!authCtx.isUserLoggedIn && <NavLink to={'/login'}>Login</NavLink>}
+              {!authCtx.isUserLoggedIn && <NavLink to={'/register'}>Register</NavLink> }
+              {authCtx.isUserLoggedIn && <NavLink to={'/home'}>Home</NavLink>}
+              {authCtx.isUserLoggedIn && <NavLink to='/add-post'>Add Post</NavLink>}
+              {authCtx.isUserLoggedIn && <NavLink onClick={logoutHandler} to={'/login'}>Logout</NavLink>}
             </nav>
         </Container>
-    </div>
+    </header>
   )
 }
 

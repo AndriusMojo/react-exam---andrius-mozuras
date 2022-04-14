@@ -1,11 +1,15 @@
+.head {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
 .header {
-    background-color: #333;
+    background-color: rgb(32, 32, 32);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
 }
 
 .header a {
@@ -13,16 +17,23 @@
      color: white;
 }
 
-.main-nav > a {
+.header img {
+    display: inline-block;
+    width: 20%;
+    color: white;
+}
+
+.mainNav > a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
     margin: 0 15px;
     padding: 5px 10px;
     border-radius: 0.5em;
+    font-size: 1.3em;
 }
 
-.main-nav > a:hover {
+.mainNav > a:hover {
     text-decoration: none;
     color: inherit;
     display: inline-block;
@@ -30,4 +41,9 @@
     padding: 5px 10px;
     background-color: rgb(73, 73, 73);
     border-radius: 0.5em;
+}
+
+.bgiClass {
+    background-image: url(/public/beautiful-wallpaper-1920x1080.jpg);
+    background-size: cover;
 }

@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header/Header';
 import AddPostPage from './pages/AddPostPage';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import Welcome from './pages/Welcome';
 import AuthContext from './store/authContext';
 
 function App() {
@@ -30,7 +32,11 @@ function App() {
   return (
     <AuthContext.Provider value={ctxValue}>
       <div className='App'>
+        <Header />
         <Switch>
+          <Route path={'/'}>
+            <Welcome />
+          </Route>
           <Route path={'/login'}>
             <LoginPage />
           </Route>

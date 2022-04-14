@@ -1,8 +1,12 @@
 import css from './Btn.module.css'
 
+
 const Btn = (props) => {
+
+    const btnClass = props.dark ? css.btnDark : css.btnLight
+
     return (
-        <button className={css.btn}>{props.children}</button>
+        <button className={btnClass}>{props.children}</button>
     )
 }
 export default Btn;
