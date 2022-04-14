@@ -1,0 +1,35 @@
+.btnDark {
+    background-color:  transparent;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    padding: 20px 40px;
+    color: white;
+    font-weight: 900;
+}
+
+.btnDark:hover {
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    padding: 20px 40px;
+    color: white;
+    font-weight: 900;
+}
+
+.btnLight {
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    padding: 20px 40px;
+    color: white;
+    font-weight: 900;
+}
+
+.btnLight:hover {
+    background-color:  transparent;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    padding: 20px 40px;
+    color: white;
+    font-weight: 900;
+}
