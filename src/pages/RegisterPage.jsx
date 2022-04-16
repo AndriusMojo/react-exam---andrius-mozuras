@@ -1,3 +1,4 @@
+import Form from "../components/Form/Form";
 import Container from "../components/UI/Container";
 
 
@@ -8,14 +9,11 @@ function RegisterPage() {
 
     }
   return (
+    <div className="bgiClass">
     <Container>
-        <h1>Register</h1>
-        <form onSubmit={formHandler}>
-            <input type="text" placeholder="email" />
-            <input type="text" placeholder="password" />
-            <button>Register</button>
-        </form>
+          <Form title='Register' btnTitle='Sign Up' />
     </Container>
+    </div>
   )
 }
 export default RegisterPage;

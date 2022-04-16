@@ -3,6 +3,7 @@ import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
+import ProtectedRoute from './components/UI/ProtectedRoute';
 import AddPostPage from './pages/AddPostPage';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
@@ -34,21 +35,21 @@ function App() {
       <div className='App'>
         <Header />
         <Switch>
-          <Route path={'/'}>
-            <Welcome />
-          </Route>
           <Route path={'/login'}>
             <LoginPage />
           </Route>
           <Route path={'/register'}>
             <RegisterPage />
           </Route>
-          <Route path={'/home'}>
+          <Route path={'/'} exact>
+            <Welcome />
+          </Route>
+          <ProtectedRoute path='/home' exact>
             <HomePage />
-          </Route>
-          <Route path={'/add-post'}>
+          </ProtectedRoute>
+          <ProtectedRoute path='/add-posts' exact>
             <AddPostPage />
-          </Route>
+          </ProtectedRoute>
           <Route path={'*'}>
             <h1>Page not found</h1>
           </Route>

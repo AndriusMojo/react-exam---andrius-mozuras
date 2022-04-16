@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Container from "./UI/Container"
+import Container from "../UI/Container";
 import css from './NotLoggedIn.module.css';
 
 function NotLoggedIn() {
@@ -14,4 +14,4 @@ function NotLoggedIn() {
   )
 }
 
-export default NotLoggedIn
+export default NotLoggedIn;

@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import Form from "../components/Form/Form";
 import Container from "../components/UI/Container";
 import AuthContext from "../store/authContext";
 
@@ -12,14 +13,11 @@ function LoginPage() {
     }
 
   return (
-    <Container>
-        <h1>Login</h1>
-        <form onSubmit={formHandler}>
-            <input type="text" placeholder="email" />
-            <input type="text" placeholder="password" />
-            <button type='submit'>Login</button>
-        </form>
-    </Container>
+    <div className="bgiClass">
+      <Container>
+          <Form title='Login' btnTitle='Sign in' formHandler={formHandler} />
+      </Container>
+    </div>
   )
 }
 

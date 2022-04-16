@@ -15,9 +15,11 @@ function Header() {
   return (
     <header className={css.head}>
         <Container className={css.header}>
-            <NavLink onClick={logoutHandler} to={'/'}>
-            <img src="/posterous-spaces.png" alt="" />
-            </NavLink>
+            <nav>
+              <NavLink onClick={logoutHandler} to={'/'} exact>
+                <img src="/posterous-spaces.png" alt="" />
+              </NavLink>
+            </nav>
             <nav className={css.mainNav}>
               {!authCtx.isUserLoggedIn && <NavLink to={'/login'}>Login</NavLink>}
               {!authCtx.isUserLoggedIn && <NavLink to={'/register'}>Register</NavLink> }

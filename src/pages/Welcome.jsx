@@ -4,7 +4,7 @@ import Container from "../components/UI/Container"
 function Welcome() {
   return (
     <div className="bgiClass">
-        <Container className='addClass'>
+        <Container>
             <Hero />
         </Container>
     </div>
