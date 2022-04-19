@@ -4,11 +4,12 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import ProtectedRoute from './components/UI/ProtectedRoute';
-import AddPostPage from './pages/AddPostPage';
-import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import Welcome from './pages/Welcome';
+import AddPostPage from './pages/AddPostPage/AddPostPage';
+import HomePage from './pages/HomePage/HomePage';
+import LoginPage from './pages/LoginPage/LoginPage';
+import RegisterPage from './pages/RegisterPage/RegisterPage';
+import Welcome from './pages/WelcomePage/Welcome';
+
 import AuthContext from './store/authContext';
 
 function App() {

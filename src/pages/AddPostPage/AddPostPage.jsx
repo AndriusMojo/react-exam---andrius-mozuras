@@ -4,4 +4,4 @@ function AddPostPage() {
   )
 }
 
-export default AddPostPage
+export default AddPostPage;

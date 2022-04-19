@@ -1,5 +1,5 @@
-import Hero from "../components/Hero/Hero"
-import Container from "../components/UI/Container"
+import Hero from "../../components/Hero/Hero"
+import Container from "../../components/UI/Container"
 
 function Welcome() {
   return (
@@ -11,4 +11,4 @@ function Welcome() {
   )
 }
 
-export default Welcome
+export default Welcome;
