@@ -29,4 +29,4 @@
 
 ## GIT:
 
-https://github.com/Cirkininkas/NodeJS-modulio-egzaminas---Andrius-Moz-ras/blob/master/README.md
+https://github.com/Cirkininkas/react-exam---andrius-mozuras/blob/master/README.md
