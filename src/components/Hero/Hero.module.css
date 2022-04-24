@@ -1,0 +1,31 @@
+.hero {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+span {
+    color: white;
+}
+
+.nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.nav > span {
+    margin: 0 15px
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.text h1 {
+    font-size: 3rem;
+}

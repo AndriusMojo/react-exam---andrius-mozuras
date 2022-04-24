@@ -1,0 +1,39 @@
+.btnDark {
+    background-color:  transparent;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    padding: 20px 40px;
+    color: white;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.btnDark:hover {
+    background-color: #ffffff;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    padding: 20px 40px;
+    color: rgb(32, 32, 32);
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.btnLight {
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 20px 40px;
+    color: rgb(32, 32, 32);
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.btnLight:hover {
+    background-color:  transparent;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1em;
+}

@@ -1,0 +1,49 @@
+.head {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.header {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 10px 20px;
+}
+
+.header a {
+     text-decoration: none;
+     color: white;
+}
+
+.header img {
+    display: inline-block;
+    width: 20%;
+    color: white;
+}
+
+.mainNav > a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 0.3em;
+    font-size: 1.3em;
+}
+
+.mainNav > a:hover {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 0.3em;
+}
+
+.bgiClass {
+    background-image: url(/public/beautiful-wallpaper-1920x1080.jpg);
+    background-size: cover;
+}
